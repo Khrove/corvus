@@ -1,0 +1,19 @@
+{
+    "name": "corvus",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "wdio": "wdio run wdio.conf.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@wdio/cli": "^8.21.0",
+        "@wdio/local-runner": "^8.21.0",
+        "@wdio/mocha-framework": "^8.21.0",
+        "@wdio/spec-reporter": "^8.21.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.2.2"
+    }
+}
