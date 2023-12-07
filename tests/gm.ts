@@ -3,7 +3,7 @@ import { loginOperations } from "../operations/Login.operations";
 
 describe('Go To GM', () => {
    before(() => {
-      browser.url('https://digital.uat.greatminds.dev/');
+      browser.url('any-url');
    });
 
    it('Should fetch all buttons on the page', async () => {
@@ -13,7 +13,7 @@ describe('Go To GM', () => {
 
         await loginOperations.waitForLoginPage();
         await loginOperations.buildWorld();
-        await loginOperations.loginWithEmail('sit_em2_t1@yopmail.com', 'Test@123');
+        await loginOperations.loginWithEmail('obscured-login', 'obscured-password');
 
         await addAttributesToElement('.module-card', 'ModuleCard');
         await $('[jj-auto="CountingAndCardinalityModuleCard"]').click();
